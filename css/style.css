@@ -6,6 +6,16 @@
   --third-text-color: #000000;
   --accent-color: #2196f3;
 }
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0 ;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -16,6 +26,15 @@ body {
 .list {
   list-style: none;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*---------Header---------*/
+
 .header-logo {
   font-family: Raleway;
 font-style: normal;
@@ -24,6 +43,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--third-text-color);
+margin-right: 93px;
 }
 .accent {
 color: var(--accent-color);
@@ -50,6 +70,35 @@ color: var(--secondary-text-color);
 .header-adress-link:focus {
   color: var(--accent-color);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-address {
+  display: flex;
+  align-items: center;
+  margin-left: 331px;
+  margin-right: auto;
+ }
+.header-adress-link {
+    margin-right: 50px;
+ }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*----------HERO---------*/
+
 .hero {
   background-color: #2F303A;
 }
@@ -63,6 +112,9 @@ text-transform: uppercase;
 color: var(--primary-title-color);
 }
 .hero-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color);
@@ -83,6 +135,7 @@ color: var(--primary-title-color);
 .hero-btn:focus {
   color: var(--primary-title-color);
   }
+  /*--------ABOUT------*/
 .about-title {
   font-size: 14px;
   line-height: 1.14;
