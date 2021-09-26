@@ -113,17 +113,17 @@ color: var(--secondary-text-color);
 
 .hero {
 background-color: #2F303A;
-height: 600px;
-align-items: center;
-text-align: center;
+
 }
-.hero-connainer {
+.hero-container {
 padding-top: 200px;
-padding-left: 252px;
+padding-bottom: 280px;
 align-items: center;
 text-align: center;
 }
 .hero-title {
+  margin: 0 auto;
+  margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.5;
@@ -135,8 +135,6 @@ color: var(--primary-title-color);
 max-width: 696px;
 }
 .hero-btn {
-  padding-top: 30px;
-  padding-left: 500px;
   min-width: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -168,14 +166,14 @@ max-width: 696px;
 .about-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-}
+  margin-left: -30px;
+  }
 .about-list .about-item {
 width: 270px;
 }
 .about-item{
   flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
+  margin-left: 30px;
 }
 .about-after-title {
 min-width: 270px;
@@ -207,11 +205,13 @@ margin: 0 auto;
 .foto-list {
   display: flex; 
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .foto-foto {
   flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .foto-title {
@@ -233,18 +233,20 @@ margin: 0 auto;
 .time-title-list {
   display: flex; 
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .time-product {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
+flex-basis: calc(100% / 4 - 30px);
+margin-left: 30px;
+margin-top: 30px;
 }
 .time-text{
-  padding-top: 30px;
-  padding-bottom: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 .time-name{
-  padding-bottom: 10px;
+padding-bottom: 10px;
 }
 .time-title {
  margin-bottom: 50px;
@@ -254,7 +256,7 @@ letter-spacing: 0.03em;
 color: var(--secondary-title-color);
 }
 .time-name {
-  font-size: 16px;
+font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
@@ -322,8 +324,24 @@ color: rgba(255, 255, 255, 0.6);
 
 /*--------PORTFOLIO------*/
 
+.button-list {
+display: flex;
+align-items: center;
+}
+.button-button {
+margin-right: 8px;
+align-items: center;
+}
+.button-button:last-child {
+margin-right: 0;
+}
+.button-button{
+  margin: 0 auto;
+}
 .button-link {
-  font-family: Roboto;
+margin: 0 auto;
+padding: 6px 22px;
+font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -344,7 +362,7 @@ color: var(--primary-title-color);
 border-radius: 4px;
 }
 .portfolio-title {
-  font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -353,7 +371,7 @@ letter-spacing: 0.06em;
 color: var(--secondary-text-color);
 }
 .portfolio-after-title {
-  font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
