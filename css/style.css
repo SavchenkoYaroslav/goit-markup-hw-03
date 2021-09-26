@@ -117,7 +117,7 @@ background-color: #2F303A;
 }
 .hero-container {
 padding-top: 200px;
-padding-bottom: 280px;
+padding-bottom: 200px;
 align-items: center;
 text-align: center;
 }
@@ -324,9 +324,25 @@ color: rgba(255, 255, 255, 0.6);
 
 /*--------PORTFOLIO------*/
 
+.button {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .button-list {
 display: flex;
 align-items: center;
+justify-content: center;
+margin-bottom: 50px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .button-button {
 margin-right: 8px;
@@ -334,9 +350,6 @@ align-items: center;
 }
 .button-button:last-child {
 margin-right: 0;
-}
-.button-button{
-  margin: 0 auto;
 }
 .button-link {
 margin: 0 auto;
@@ -360,6 +373,23 @@ border:none;
 background-color: #2196F3;
 color: var(--primary-title-color);
 border-radius: 4px;
+}
+
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-left: -30px;
+margin-top: -30px;
+}
+.portfolio-item{
+margin-left: 30px;
+margin-top: 30px;
+flex-basis: calc(100% / 3 - 30px);
+}
+.product-content {
+padding: 20px 24px;
+border: 1px solid #EEEEEE;
 }
 .portfolio-title {
 font-family: Roboto;
